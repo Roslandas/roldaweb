@@ -1,6 +1,6 @@
 # ROLDA LT Website
 
-Automotive diagnostics and programming services website for KAMSIMA.
+Automotive diagnostics and programming services website for ROLDA LT.
 
 ## Setup Instructions
 
