@@ -20,7 +20,7 @@
       --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
       --radius: 12px;
     }
-    
+
     body {
       font-family: 'Rubik', sans-serif;
       margin: 0;
@@ -29,7 +29,7 @@
       color: var(--dark);
       line-height: 1.6;
     }
-    
+
     header {
       background-color: var(--primary);
       color: white;
@@ -39,7 +39,7 @@
       z-index: 100;
       box-shadow: var(--shadow);
     }
-    
+
     .header-content {
       display: flex;
       justify-content: center;
@@ -47,44 +47,47 @@
       max-width: 1200px;
       margin: 0 auto;
     }
-    
+
     header h1 {
       margin: 0;
       font-size: 1.8rem;
       font-weight: 700;
     }
-    
+
     .hero {
-      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                  url('images/hero/workshop.jpg') center/cover;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('images/hero/workshop.avif') center/cover;
       color: white;
       padding: 4rem 1rem;
       text-align: center;
       margin-bottom: 2rem;
     }
-    
+
     .hero-banner {
-      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                  url('images/hero/workshop.jpg') center/cover;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('images/hero/workshop.avif') center/cover;
       color: white;
       padding: 4rem 1rem;
       text-align: center;
       margin-bottom: 2rem;
-      border-radius: 0; /* Straight corners */
+      border-radius: 0;
+      /* Straight corners */
     }
-    
-    .hero h2, .hero-banner h2 {
+
+    .hero h2,
+    .hero-banner h2 {
       font-size: 2rem;
       margin-bottom: 1rem;
       color: white;
     }
-    
-    .hero p, .hero-banner p {
+
+    .hero p,
+    .hero-banner p {
       max-width: 600px;
       margin: 0 auto 2rem;
       font-size: 1.1rem;
     }
-    
+
     .btn {
       display: inline-block;
       background-color: var(--accent);
@@ -98,12 +101,12 @@
       cursor: pointer;
       font-size: 1rem;
     }
-    
+
     .btn:hover {
       background-color: #e05a00;
       transform: translateY(-2px);
     }
-    
+
     .container {
       display: flex;
       flex-direction: column;
@@ -112,7 +115,7 @@
       max-width: 1200px;
       margin: 0 auto;
     }
-    
+
     section {
       background-color: white;
       border-radius: var(--radius);
@@ -120,11 +123,11 @@
       padding: 1.5rem;
       transition: transform 0.3s;
     }
-    
+
     section:hover {
       transform: translateY(-5px);
     }
-    
+
     h2 {
       color: var(--secondary);
       margin-top: 0;
@@ -132,14 +135,14 @@
       padding-bottom: 0.5rem;
       display: inline-block;
     }
-    
+
     .services-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
       gap: 1.5rem;
       margin-top: 1.5rem;
     }
-    
+
     .service-card {
       background-color: var(--light);
       border-radius: var(--radius);
@@ -148,24 +151,24 @@
       transition: all 0.3s;
       cursor: pointer;
     }
-    
+
     .service-card:hover {
       background-color: #f0f0f0;
       transform: translateY(-3px);
     }
-    
+
     .service-card h3 {
       margin-top: 0;
       color: var(--secondary);
       display: flex;
       align-items: center;
     }
-    
+
     .service-card i {
       margin-right: 10px;
       color: var(--accent);
     }
-    
+
     .service-details {
       background-color: #f5f5f5;
       border-radius: var(--radius);
@@ -173,27 +176,27 @@
       margin-top: 1rem;
       display: none;
     }
-    
+
     .service-details.show {
       display: block;
     }
-    
+
     .contact-form {
       display: grid;
       gap: 1rem;
       margin-top: 1rem;
     }
-    
+
     .form-group {
       display: flex;
       flex-direction: column;
     }
-    
+
     .form-group label {
       margin-bottom: 0.3rem;
       font-weight: 500;
     }
-    
+
     .form-group input,
     .form-group textarea {
       padding: 0.8rem;
@@ -201,26 +204,26 @@
       border: 1px solid #ddd;
       transition: border-color 0.3s, box-shadow 0.3s;
     }
-    
+
     .form-group input:focus,
     .form-group textarea:focus {
       outline: none;
       border-color: var(--secondary);
       box-shadow: 0 0 0 2px rgba(0, 90, 141, 0.2);
     }
-    
+
     .form-group input.error,
     .form-group textarea.error {
       border-color: #ff3333;
       background-color: #fff8f8;
     }
-    
+
     .error-message {
       color: #ff3333;
       font-size: 0.85rem;
       margin-top: 0.3rem;
     }
-    
+
     .success-message {
       background-color: #4CAF50;
       color: white;
@@ -229,37 +232,44 @@
       margin-top: 1rem;
       animation: fadeIn 0.5s;
     }
-    
+
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-10px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
-    
+
     .form-group input,
     .form-group textarea {
       font-family: 'Rubik', sans-serif;
     }
-    
+
     .form-group textarea {
       min-height: 120px;
       resize: vertical;
     }
-    
+
     .contact-info {
       margin-bottom: 1rem;
     }
-    
+
     .contact-item {
       display: flex;
       align-items: center;
       margin-bottom: 0.5rem;
     }
-    
+
     .contact-item i {
       width: 25px;
       color: var(--secondary);
     }
-    
+
     footer {
       text-align: center;
       padding: 2rem 1rem;
@@ -267,7 +277,7 @@
       color: white;
       margin-top: 3rem;
     }
-    
+
     .footer-content {
       max-width: 1200px;
       margin: 0 auto;
@@ -275,30 +285,31 @@
       flex-direction: column;
       gap: 1rem;
     }
-    
+
     .social-links {
       display: flex;
       justify-content: center;
       gap: 1rem;
       margin-bottom: 1rem;
     }
-    
+
     .social-links a {
       color: white;
       font-size: 1.3rem;
       transition: color 0.3s;
     }
-    
+
     .social-links a:hover {
       color: var(--accent);
     }
-    
+
     @media (max-width: 768px) {
       .services-grid {
         grid-template-columns: 1fr;
       }
-      
-      .hero h2, .hero-banner h2 {
+
+      .hero h2,
+      .hero-banner h2 {
         font-size: 1.7rem;
       }
     }
@@ -308,24 +319,26 @@
 <body>
   <header>
     <div class="header-content">
-      <h1>ROLDA LT</h1>
+      <h1>KAMSIMA</h1>
     </div>
   </header>
 
   <section class="hero-banner">
-    <h2>Profesionali Automobilių Diagnostika</h2>
-    <p>Teikiame aukštos kokybės automobilių diagnostikos, kodavimo ir programavimo paslaugas Panevėžyje ir jo apylinkėse</p>
+    <h2>Internetinės Paslaugos ir Automobilių Diagnostika</h2>
+    <p>Pagrindinė įmonės veikla yra serverių nuoma ir internetinės paslaugos. Taip pat teikiame aukštos kokybės
+      automobilių diagnostikos, kodavimo ir programavimo paslaugas Panevėžyje ir jo apylinkėse.</p>
     <a href="#contact" class="btn">Susisiekti</a>
   </section>
 
   <div class="container">
     <section class="about">
       <h2>Apie mus</h2>
-      <p>Teikiame profesionalias automobilių diagnostikos, kodavimo ir programavimo paslaugas Panevėžyje ir jo apylinkėse. Mūsų tikslas – užtikrinti greitą, tikslų ir patikimą automobilio techninės būklės įvertinimą bei individualius sprendimus jūsų transporto priemonei.</p>
-      
-      <div class="advantages">
-        <p class="loading">Kraunama...</p>
-      </div>
+      <p>Teikiame internetines ir serverių nuomos paslaugas, užtikrindami aukščiausią kokybę ir greitą aptarnavimą.
+        Pagalbą teikiame 24 valandas per parą, 7 dienas per savaitę. Taip pat teikiame profesionalias automobilių
+        diagnostikos, kodavimo ir programavimo paslaugas Panevėžyje ir jo apylinkėse. Mūsų tikslas - užtikrinti
+        greitą, tikslų ir patikimą automobilio techninės būklės įvertinimą bei individualius sprendimus jūsų transporto
+        priemonei.</p>
+
     </section>
 
     <section class="services">
@@ -335,39 +348,39 @@
           <h3><i class="fas fa-laptop-code"></i> <span>Kompiuterinė Diagnostika</span></h3>
           <p>Greitas ir tikslus gedimų nustatymas</p>
         </div>
-        
+
         <div class="service-card">
           <h3><i class="fas fa-exclamation-triangle"></i> <span>Klaidų Šalinimas</span></h3>
           <p>Klaidų išvalymas ir sprendimų pasiūlymai</p>
         </div>
-        
+
         <div class="service-card">
           <h3><i class="fas fa-code"></i> <span>Programavimas</span></h3>
           <p>Pritaikymas individualiems poreikiams</p>
         </div>
-        
+
         <div class="service-card">
           <h3><i class="fas fa-plug"></i> <span>Modulių Pririšimas</span></h3>
           <p>Naujų dalių aktyvavimas ir integracija</p>
         </div>
-        
+
         <div class="service-card">
           <h3><i class="fas fa-tools"></i> <span>Serviso Funkcijos</span></h3>
           <p>Serviso intervalų atstatymas ir kitos paslaugos</p>
         </div>
-        
+
         <div class="service-card">
           <h3><i class="fas fa-tint"></i> <span>Purkštukų Patikra</span></h3>
           <p>Patikra ir restauravimas</p>
         </div>
       </div>
-      
+
       <div id="service-details" class="service-details"></div>
     </section>
 
     <section id="contact" class="contact">
       <h2>Kontaktai</h2>
-      
+
       <div class="contact-info">
         <div class="contact-item">
           <i class="fas fa-map-marker-alt"></i>
@@ -381,9 +394,13 @@
           <i class="fab fa-telegram"></i>
           <p>Telegram: <a href="https://t.me/Asrolka" target="_blank">@Asrolka</a></p>
         </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <p>El. paštas: <a href="mailto:mb.rolda.lt@gmail.com">mb.rolda.lt@gmail.com</a></p>
+        </div>
       </div>
-      
-      <form class="contact-form" id="contact-form" action="https://formspree.io/f/xkgbvyjj" method="POST">
+
+      <form class="contact-form" id="contact-form">
         <div class="form-group">
           <label for="name">Vardas</label>
           <input type="text" id="name" name="name" required>
@@ -401,14 +418,14 @@
           <textarea id="message" name="message" required></textarea>
         </div>
         <!-- Formspree configuration fields -->
-        <input type="hidden" name="_subject" value="Nauja užklausa iš KAMSIMA svetainės">
+        <input type="hidden" name="_subject" value="Nauja užklausa iš ROLDA LT svetainės">
         <input type="hidden" name="_language" value="lt">
-        <input type="hidden" name="_next" value="https://kamsima.lt/?success=true">
+        <input type="hidden" name="_next" value="https://rolda.lt/?success=true">
         <!-- Restrict submissions to come only from your domain -->
         <input type="hidden" name="_domain" value="rolda.lt">
         <!-- For local development testing -->
         <input type="hidden" name="_next" value="http://localhost:8000/?success=true">
-        
+
         <button type="submit" class="btn">Siųsti užklausą</button>
         <div id="form-indicator" style="display:none;">
           <div style="padding: 10px; background-color: #f3f3f3; border-radius: 8px; margin-top: 10px;">
@@ -430,30 +447,30 @@
 
   <script>
     // Check for success parameter on page load
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
       // Check if we returned from a successful form submission
-      if (window.location.search.includes('success=true') || 
-          window.location.search.includes('submitted=true')) {
+      if (window.location.search.includes('success=true') ||
+        window.location.search.includes('submitted=true')) {
         showSuccessMessage();
       }
     });
-    
+
     // Form submission handler (for the visible form in the page)
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
       event.preventDefault();
-      
+
       // Get email value for validation
       const emailInput = document.getElementById('email');
       const emailValue = emailInput.value.trim();
-      
+
       // Email validation regex pattern
       const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      
+
       // Validate email format
       if (!emailPattern.test(emailValue)) {
         // Show error message visually
         emailInput.classList.add('error');
-        
+
         // Check if an error message already exists
         let errorMsg = emailInput.nextElementSibling;
         if (!errorMsg || !errorMsg.classList.contains('error-message')) {
@@ -462,72 +479,72 @@
           errorMsg.innerText = "Prašome įvesti teisingą el. pašto adresą.";
           emailInput.parentNode.insertBefore(errorMsg, emailInput.nextSibling);
         }
-        
+
         emailInput.focus();
         return;
       } else {
         // Remove error styling if valid
         emailInput.classList.remove('error');
-        
+
         // Remove any error message
         const errorMsg = emailInput.nextElementSibling;
         if (errorMsg && errorMsg.classList.contains('error-message')) {
           errorMsg.remove();
         }
       }
-      
+
       // Show the loading indicator
       const formIndicator = document.getElementById('form-indicator');
       formIndicator.style.display = 'block';
-      
+
       // Get form data
       const formData = new FormData(this);
-      
+
       // Send the form data via fetch to avoid CORS issues
-      fetch("https://formspree.io/f/xkgbvyjj", {
+      fetch("https://formspree.io/f/mqabdryp", {
         method: "POST",
         body: formData,
         headers: {
           'Accept': 'application/json'
         }
       })
-      .then(response => {
-        if (response.ok) {
-          // Show success message
-          showSuccessMessage();
-        } else {
-          // Show error message
+        .then(response => {
+          if (response.ok) {
+            // Show success message
+            showSuccessMessage();
+          } else {
+            // Show error message
+            alert("Klaida siunčiant formą. Bandykite dar kartą vėliau.");
+          }
+          // Hide loading indicator
+          formIndicator.style.display = 'none';
+        })
+        .catch(error => {
+          console.error('Error:', error);
           alert("Klaida siunčiant formą. Bandykite dar kartą vėliau.");
-        }
-        // Hide loading indicator
-        formIndicator.style.display = 'none';
-      })
-      .catch(error => {
-        console.error('Error:', error);
-        alert("Klaida siunčiant formą. Bandykite dar kartą vėliau.");
-        // Hide loading indicator
-        formIndicator.style.display = 'none';
-      });
+          // Hide loading indicator
+          formIndicator.style.display = 'none';
+        });
     });
-    
+
     // Function to show success message
     function showSuccessMessage() {
       const form = document.getElementById('contact-form');
-      
+
       // Create success message element
       const successMsg = document.createElement('div');
       successMsg.className = 'success-message';
-      
+
       // Add content to success message
       successMsg.innerHTML = `
         <h4 style="margin-top: 0;">Ačiū už jūsų užklausą!</h4>
         <p>Mes susisieksime su jumis kaip įmanoma greičiau.</p>
       `;
-      
+
       // Insert success message before the form
       form.parentNode.insertBefore(successMsg, form);
       form.reset();
-      
+
       // Remove success message after 5 seconds
       setTimeout(() => {
         successMsg.style.opacity = '0';
@@ -536,7 +553,7 @@
           successMsg.remove();
         }, 1000);
       }, 5000);
-      
+
       // Remove the success parameter from URL to prevent showing the message again on refresh
       if (window.history && window.history.replaceState) {
         const newUrl = window.location.pathname + window.location.hash;
@@ -545,4 +562,5 @@
     }
   </script>
 </body>
+
 </html>
